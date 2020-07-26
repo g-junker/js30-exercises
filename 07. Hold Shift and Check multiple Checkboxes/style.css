@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ffcc00;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+}
+
+.inbox {
+    background-color: white;
+    width: 300px;
+    margin: 3em auto;
+    border-radius: 4px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #DDD;
+}
+
+.item:last-child {
+    border-bottom: 0;
+}
+
+input {
+    padding: 1.2em;
+    margin-right: 1.2em;
+    margin-left: 1.2em;
+}
+
+p {
+    padding: 1.2em;
+    border-left: 1px solid #DDD;
+}
+
+.selected {
+    text-decoration: line-through;
+    background-color: rgb(243, 243, 243);
+}
+
+input:checked + .item {
+    text-decoration: line-through;
+    background-color: rgb(243, 243, 243);    
+}

@@ -1,0 +1,57 @@
+:root {
+    --color: #000000;
+    --blur: 0px;
+    --spacing: 5px;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1{
+    font-size: 2.5em;
+    margin-top: 1em;
+}
+
+.h1-highlight {
+    color: var(--color);
+}
+
+.l-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+img {
+    border-style: solid;
+    border-width: var(--spacing);
+    border-color: var(--color);
+    filter: blur(var(--blur));
+    width: 100%;
+
+}
+
+.variables {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 2em;
+}
+
+.var-control > span{
+    font-size: 1.5em;
+    margin-right: 0.5em;
+}
+
+.var-control > span, input{
+    display: inline-block;
+    vertical-align: middle;
+}
